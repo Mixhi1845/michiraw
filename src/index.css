@@ -1,0 +1,86 @@
+/*=============== LOCAL FONTS ===============*/
+@import url('./assets/fonts/chubbo.css');
+@import url('./assets/fonts/khand.css');
+@import url('./assets/fonts/switzer.css');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors Palette 1 ==========
+--accent: hsl(236, 45%, 27%);
+--text-color: hsl(0, 2%, 90%);
+--text: hsl(0, 0%, 0%);
+--background: hsl(0, 100%, 100%);*/
+
+    /*========== Colors Palette 2 ==========*/
+    --text: #10100e;
+    --gray-d3-color: #191815;
+    --gray-d2-color: #30302b;
+    --gray-d1-color: #606055;
+    --gray-b-color: #c0c0ab;
+    --gray-l1-color: #e8e8cf;
+    --gray-l2-color: #f8f8dd;
+    --background: #ffffe3;
+    /*--primary: #10100e;
+--text: #10100e;*/
+    --accent: #ff6b00;
+
+    /*========== Font and typography ==========*/
+    --heading-font: 'Chubbo-Variable', sans-serif; /*or Khand, Switzer, Questrial*/
+    --heading-italic: 'Chubbo-VariableItalic', sans-serif;
+    --body-font: 'Switzer-Variable', sans-serif; /*or Atkinson Hyperlegible*/
+    --body-italic: 'Switzer-VariableItalic', sans-serif;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --header-font-size: 3rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 1.25em;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /*========== Colors Palette 1 ==========**/
+        --text: #ffffe3;
+        --white-b-color: #191815;
+        --gray-l2-color: #30302b;
+        --gray-l1-color: #606055;
+        --gray-b-color: #c0c0ab;
+        --gray-d1-color: #e8e8cf;
+        --gray-d2-color: #f8f8dd;
+        --background: #10100e;
+        /*--primary: #FFFFE3;
+      --text: #FFFFE3;*/
+        --accent: #cf773a;
+
+        /*========== Colors Palette 2 ==========
+      --accent: #debf65;
+      --text-color: #41e1d2;
+      --text: #ffffff;
+      --background: #0a0a23;*/
+    }
+}
