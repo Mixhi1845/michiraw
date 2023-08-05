@@ -5,13 +5,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    /*========== Colors Palette 1 ==========
---accent: hsl(236, 45%, 27%);
---text-color: hsl(0, 2%, 90%);
---text: hsl(0, 0%, 0%);
---background: hsl(0, 100%, 100%);*/
-
-    /*========== Colors Palette 2 ==========*/
+    /*========== Colors Palette ==========*/
     --text: #10100e;
     --gray-d3-color: #191815;
     --gray-d2-color: #30302b;
@@ -53,18 +47,77 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
     background-color: var(--background);
     color: var(--text);
+    font-family: var(--body-font);
     line-height: 1;
     margin-bottom: 1.25em;
 }
 
+/*
+    standard heading styling of every browser:
+    h1 - font-size: 2em  = 32px 
+    h2 - font-size: 1.5em  = 24px 
+    h3 - font-size: 1.17em  = 18.72px 
+    h4 - font-size: 1em  = 16px 
+    h5 - font-size: 0.83em  = 13.28px 
+    h6 - font-size: 0.67em  = 10.72px
+
+    medium inspired headings:
+*/
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*  h4 - font-size: 1em  = 16px 
+    h5 - font-size: 0.83em  = 13.28px 
+    h6 - font-size: 0.67em  = 10.72px*/
+
+p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 736px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /*  h4 - font-size: 1em  = 16px 
+    h5 - font-size: 0.83em  = 13.28px 
+    h6 - font-size: 0.67em  = 10.72px*/
+
+    p {
+        font-size: 18px;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
-        /*========== Colors Palette 1 ==========**/
+        /*========== Colors Palette ==========**/
         --text: #ffffe3;
         --white-b-color: #191815;
         --gray-l2-color: #30302b;
@@ -76,11 +129,5 @@ body {
         /*--primary: #FFFFE3;
       --text: #FFFFE3;*/
         --accent: #cf773a;
-
-        /*========== Colors Palette 2 ==========
-      --accent: #debf65;
-      --text-color: #41e1d2;
-      --text: #ffffff;
-      --background: #0a0a23;*/
     }
 }

@@ -1,12 +1,12 @@
-// components/Home.js
-import React from "react";
+// components/About.js
+import React from 'react';
 
-function Home() {
-  return (
-    <div>
-      <p>Hello Mum</p>
-    </div>
-  );
+function About() {
+    return (
+        <div>
+            <p>About</p>
+        </div>
+    );
 }
 
-export default Home;
+export default About;
