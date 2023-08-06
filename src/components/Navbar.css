@@ -1,7 +1,16 @@
 @import url('/src/index.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --background-nav1: rgba(255, 255, 227, 0.1);
+    --background-nav0: rgba(255, 255, 227, 0);
+}
 
 .wrapper {
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(135deg, var(--background-nav1), var(--background-nav1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -33,7 +42,6 @@ a {
 
 .site-header {
     position: relative;
-    background-color: var(--background);
 }
 
 .site-header__wrapper {
@@ -81,24 +89,57 @@ a {
     }
 }
 
+.site-header__start {
+    padding-left: 1.5em;
+    width: 125px;
+}
+
+.logo__svg {
+    position: fixed;
+    top: 0px;
+    width: 125px;
+    height: auto;
+    top: 1em;
+    left: 7.5em;
+    z-index: var(--z-fixed);
+}
+
+#circle1,
+#ellipse1,
+#ellipse2,
+#ellipse3 {
+    stroke: var(--text);
+}
+
+#globe {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: weblogo-spin infinite 30s linear;
+    height: 80px;
+}
+
+@keyframes weblogo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .nav__item a {
     display: block;
     padding: 1.5rem 1rem;
 }
 
-.nav__toggle {
-    display: none;
-}
-@media (max-width: 659px) {
-    .nav__toggle {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-    }
-}
-
 ol,
 ul {
     list-style: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-nav1: rgba(16, 16, 14, 0.1);
+        --background-nav0: rgba(16, 16, 14, 0);
+    }
 }

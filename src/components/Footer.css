@@ -1,0 +1,22 @@
+@import url('/src/index.css');
+
+footer {
+    bottom: 0px;
+    margin-top: 66px;
+    width: 100%;
+    background-color: var(--gray-l2-color);
+    border: solid 2px var(--gray-b-color);
+    border-width: 2px 0;
+}
+
+.footer__wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 33px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__wrapper p {
+    display: inline-block;
+}
