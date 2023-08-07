@@ -79,7 +79,7 @@ function Home() {
                 <div className="section__wrapper">
                     <h2>Recent Blog Article</h2>
 
-                    <img className="blog__img" src="https://placehold.co/300x300/c0c0ab/000?text=Photography\nexample&font=opensans" alt="" />
+                    <img className="blog__img" src="https://placehold.co/300x300/c0c0ab/000?text=Blog\nexample&font=opensans" alt="" />
 
                     <div className="blog__txt">
                         <p className="p__bold">{recentBlogTitle}My Personal Portfolio Journey</p>
@@ -88,6 +88,11 @@ function Home() {
                             etiam. Vulputate tortor in senectus tempor. Dictum adipiscing cras venenatis eget et amet ullamcorper. Vestibulum egestas posuere ultrices molestie tempor metus consequat
                             nulla feugiat. Ac quisque orci diam.
                         </p>
+                        <Link to="/blog">
+                            <div className="button">
+                                <p>read the article</p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

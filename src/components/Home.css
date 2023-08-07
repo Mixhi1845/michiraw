@@ -12,6 +12,23 @@
     margin: 10px 20px 20px 20px;
 }
 
+.button {
+    margin-top: 100px; /*lösung finden!!!!!!!!!!!!!!!!!!*/
+    width: 25%;
+    background-color: var(--accent);
+    border: solid 2px var(--gray-b-color);
+}
+
+.button:hover {
+    color: black;
+    border: solid 2px var(--gray-d1-color);
+    transition: 0.4s;
+}
+
+.button p {
+    margin: 10px 10px;
+}
+
 .hero {
     margin: 20px;
     width: 100%;
@@ -124,4 +141,146 @@
     color: var(--accent);
     margin-right: 10px;
     font-size: 30px;
+}
+
+@media screen and (max-width: 736px) {
+    .section {
+        margin-top: 66px;
+        width: 100%;
+        background-color: var(--gray-l2-color);
+        border: solid 2px var(--gray-b-color);
+        border-radius: 5px;
+        height: auto;
+    }
+
+    .section__wrapper {
+        margin: 10px 20px 20px 20px;
+    }
+
+    .button {
+        margin-top: 100px; /*lösung finden!!!!!!!!!!!!!!!!!!*/
+        width: 25%;
+        background-color: var(--accent);
+        border: solid 2px var(--gray-b-color);
+    }
+
+    .button:hover {
+        color: black;
+        border: solid 2px var(--gray-d1-color);
+        transition: 0.4s;
+    }
+
+    .button p {
+        margin: 10px 10px;
+    }
+
+    .hero {
+        margin: 20px;
+        width: 100%;
+        display: block;
+    }
+
+    .hero__pic {
+        display: block;
+    }
+
+    .hero__pic img {
+        border-radius: 5px;
+        border: solid 2px var(--gray-b-color);
+    }
+
+    .hero__txt {
+        display: block;
+    }
+
+    .hero__txt p {
+        margin-top: 20px;
+    }
+
+    .hero__socials {
+        margin-top: 40px;
+    }
+
+    .hero__stack {
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .hero__stack p {
+        font-weight: bold;
+        margin-top: unset;
+        padding-right: 15px;
+        margin-right: 15px;
+        display: block;
+        border-right: solid 2px var(--accent);
+    }
+
+    .hero__stack i {
+        margin-right: 30px;
+        font-size: 40px;
+    }
+
+    .profcards {
+        width: 100%;
+        margin-top: 66px;
+        display: inline-flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        background-color: var(--gray-l2-color);
+        border: solid 2px var(--gray-b-color);
+        border-radius: 5px;
+    }
+
+    .card:hover {
+        background-color: var(--white-b-color);
+        border: solid 2px var(--gray-d1-color);
+        transition: 0.4s;
+    }
+
+    .card__img {
+        width: 100%;
+    }
+
+    .card__txt p {
+        margin: 10px 20px;
+        font-weight: bold;
+    }
+
+    .blog__img {
+        margin-top: 5px;
+        margin-right: 10px;
+        width: 25%;
+        display: block;
+    }
+
+    .blog__txt {
+        width: 72.5%;
+        height: 290px;
+        display: block;
+        flex-direction: column;
+    }
+
+    .contact__wrapper {
+        margin: 75px 200px;
+    }
+
+    .contact__field {
+        width: 50%;
+        display: block;
+    }
+
+    .socials i {
+        color: var(--accent);
+        margin-right: 10px;
+        font-size: 30px;
+    }
 }
