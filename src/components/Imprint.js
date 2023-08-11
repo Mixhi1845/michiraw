@@ -1,29 +1,21 @@
 // components/Imprint.js
 import React from 'react';
-import Project from './modules/Project';
 import Dropdown from './modules/Dropdown';
 
 function Imprint() {
     return (
         <>
-            <div class="main-content">
-                <main>
-                    <div class="main-grid">
-                        <Project title="Archiv" Linkto="/archiv" />
-                        <Project title="Dashboard" Linkto="/dashboard" />
-                    </div>
-                </main>
+            <Dropdown MainTitle="Credits" link1="" title1="w3schools" link2="" title2="" link3="" title3="" link4="" title4="" link5="" title5="" />
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div className="hero__profession">
+                <h1>Imprint</h1>
             </div>
-
-            <Dropdown MainTitle="ABC" link1="" title1="w3schools" link2="" title2="" link3="" title3="" link4="" title4="" link5="" title5="" />
-
-            <br />
-            <br />
-            <br />
-
-            <h2>
-                <strong>Impressum</strong>
-            </h2>
 
             <p>
                 <u>Angaben gem. § 5 TMG:</u>

@@ -116,10 +116,137 @@ p {
     font-weight: bold;
 }
 
+img {
+    width: 100%;
+}
+
+.gallery {
+    line-height: 0;
+    -webkit-column-count: 3; /* split it into 5 columns */
+    -webkit-column-gap: 10px; /* give it a 5px gap between columns */
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+    margin: 10px 0 10px; /* to match column gap */
+}
+
+.gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px; /* to match column gap */
+}
+
+@media (max-width: 1000px) {
+    #gallery {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #gallery {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+.hero__profession {
+    width: 66%;
+    margin: 0px auto 20px;
+    text-align: center;
+}
+
+.hero__profession p {
+    margin-top: 5px;
+}
+
+.socials i {
+    color: var(--accent);
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.section {
+    margin-top: 66px;
+    width: 100%;
+    background-color: var(--gray-l2-color);
+    border: solid 2px var(--gray-b-color);
+    border-radius: 5px;
+}
+
+.section__wrapper {
+    margin: 10px 20px 20px 20px;
+}
+
+/*template für buttons holen!
+button {
+    background-color: var(--accent);
+    border: solid 2px var(--gray-b-color);
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 5px;
+    /*margin: 10px 0px;*
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    border: solid 2px var(--gray-d1-color);
+    transition: 0.4s;
+}
+
+.btn p {
+    margin: 10px 10px;
+}*/
+
+@media screen and (max-width: 736px) {
+    .section {
+        margin-top: 30px;
+        width: 100vmin;
+        background-color: var(--gray-l2-color);
+        border: solid 2px var(--gray-b-color);
+        border-radius: 5px;
+        height: auto;
+    }
+
+    .section__wrapper {
+        margin: 10px;
+    }
+
+    .btn {
+        margin-top: 10px; /*lösung finden!!!!!!!!!!!!!!!!!!*/
+        width: 66%;
+        background-color: var(--accent);
+        border: solid 2px var(--gray-b-color);
+    }
+
+    .btn:hover {
+        color: black;
+        border: solid 2px var(--gray-d1-color);
+        transition: 0.4s;
+    }
+
+    .btn p {
+        margin: 10px 10px;
+    }
+}
+
 @media screen and (max-width: 736px) {
     .container {
-        margin: 10px;
-        width: 100%;
+        margin: unset;
+        padding: unset;
+        max-width: 100vmax;
     }
 
     h1 {

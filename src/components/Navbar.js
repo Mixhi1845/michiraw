@@ -13,19 +13,19 @@ function Navbar() {
                         <nav className="nav">
                             <ul className="nav__wrapper">
                                 <li className="nav__item">
-                                    <Link to="/design">Design</Link>
+                                    <Link to="/professions/design">Design</Link>
                                 </li>
                                 <li className="nav__item">
-                                    <Link to="/webdev">WebDev</Link>
+                                    <Link to="/professions/webdev">WebDev</Link>
                                 </li>
                                 <li className="nav__item">
-                                    <Link to="/photography">Photography</Link>
+                                    <Link to="/professions/photography">Photography</Link>
                                 </li>
                                 <li className="nav__item">
-                                    <Link to="/psem">Project Seminar</Link>
+                                    <Link to="/professions/psem">Project Seminar</Link>
                                 </li>
                                 <li className="nav__item">
-                                    <Link to="/blender">Blender</Link>
+                                    <Link to="/professions/blender">Blender</Link>
                                 </li>
                             </ul>
                         </nav>
@@ -33,6 +33,12 @@ function Navbar() {
                     <div className="site-header__end">
                         <nav className="nav">
                             <ul className="nav__wrapper">
+                                <li className="nav__item">
+                                    <Link to="/">Home</Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link to="/">Etsy</Link>
+                                </li>
                                 <li className="nav__item">
                                     <Link to="/about">About</Link>
                                 </li>
@@ -146,10 +152,10 @@ function Navbar() {
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                            <Link to="/professions/design/design.html">Graphics Design</Link>
-                            <Link to="/professions/webdesign/webdesign.html">Web Design</Link>
-                            <Link to="/professions/sem/psem.html">Project Seminar</Link>
-                            <Link to="/professions/photography/photography.html">Photography</Link>
+                            <Link to="/design">Graphics Design</Link>
+                            <Link to="/webdev">Web Design</Link>
+                            <Link to="/psem">Project Seminar</Link>
+                            <Link to="/photography">Photography</Link>
                             <Link to="/blender">Blender</Link>
                         </div>
                     </div>

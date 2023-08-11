@@ -19,4 +19,26 @@ footer {
 
 .footer__wrapper p {
     display: inline-block;
+    margin: 0px 10px;
+}
+
+@media screen and (max-width: 736px) {
+    footer {
+        margin-top: 40px;
+        width: 100vmin;
+    }
+
+    .footer__wrapper {
+        font-size: 10pt;
+        width: 75%;
+        margin: auto;
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .footer__wrapper p {
+        margin-top: 10px;
+        font-size: 10pt;
+    }
 }

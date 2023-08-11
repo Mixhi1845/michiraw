@@ -7,10 +7,11 @@ const Project = (props) => {
     return (
         <>
             <button class="website-card">
+                <img src={props.src} alt={props.alt} class="website-image" />
                 <div class="card-info">
                     <h2>{props.title}</h2>
                     <div class="outbound-cont">
-                        <Link to={props.Linkto} class="outbound">
+                        <Link to={props.LinkTo} class="outbound">
                             <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="30" height="29" rx="3" fill="transparent"></rect>
                                 <path d="M10.454 7.36396H23.182V20.0919" stroke="beige"></path>

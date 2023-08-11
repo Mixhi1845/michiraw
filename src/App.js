@@ -1,18 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-import Home from './components/Home';
-import Design from './components/professions/Design';
-import WebDev from './components/professions/WebDev';
-import Photography from './components/professions/Photography';
-import Blender from './components/professions/Blender';
-import ProjectSeminar from './components/professions/ProjectSeminar';
+import Home from './pages/Home';
+import Design from './pages/professions/Design';
+import WebDev from './pages/professions/WebDev';
+import Photography from './pages/professions/Photography';
+import Blender from './pages/professions/Blender';
+import ProjectSeminar from './pages/professions/ProjectSeminar';
 
-import About from './components/About';
-import Blog from './components/Blog';
+import About from './pages/About';
+import Blog from './pages/Blog';
+//import Dashboard from './pages/Dashboard';
+//import Archiv from './pages/Archiv';
+import Links from './pages/Links';
 
 import Imprint from './components/Imprint';
 import NotFound from './components/NotFound';
@@ -21,17 +25,21 @@ function App() {
     return (
         <>
             <Router>
+                <ScrollToTop />
                 <Navbar />
                 <div className="container">
                     <Routes>
                         <Route exact path="/" element={<Home />} />
-                        <Route path="/design" element={<Design />} />
-                        <Route path="/webdev" element={<WebDev />} />
-                        <Route path="/photography" element={<Photography />} />
-                        <Route path="/psem" element={<ProjectSeminar />} />
-                        <Route path="/blender" element={<Blender />} />
+                        <Route path="/professions/design" element={<Design />} />
+                        <Route path="/professions/photography" element={<Photography />} />
+                        <Route path="/professions/webdev" element={<WebDev />} />
+                        <Route path="/professions/blender" element={<Blender />} />
+                        <Route path="/professions/psem" element={<ProjectSeminar />} />
+
                         <Route path="/about" element={<About />} />
                         <Route path="/blog" element={<Blog />} />
+                        <Route path="/links" element={<Links />} />
+
                         <Route path="/imprint" element={<Imprint />} />
                         <Route element={NotFound} />
                     </Routes>

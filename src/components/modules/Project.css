@@ -52,6 +52,7 @@
 
 .card-info h2 {
     font-family: var(--body-font);
+    font-style: normal;
 }
 
 .website-image {
@@ -77,7 +78,7 @@
 }
 
 .outbound {
-    background-color: var(--background);
+    background-color: var(--accent);
     border-radius: 5px;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
     display: flex;
@@ -87,11 +88,6 @@
     padding: 5px 10px;
     color: var(--text);
     font-size: 18px;
-}
-
-.outbound:hover {
-    background-color: var(--accent);
-    color: var(--accent);
 }
 
 .outbound > svg > path {

@@ -1,0 +1,49 @@
+@import url('/src/index.css');
+
+.profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: auto;
+    max-width: 100px;
+}
+
+.profile-name {
+    text-align: center;
+    padding: 30px;
+    font-family: var(--heading-italic);
+}
+
+.links {
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: var(--text);
+    background-color: var(--gray-l2-color);
+    border: solid var(--text);
+    border-width: 2px 2px 0 2px;
+    border-width: 2px;
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*border-radius: 40px;*/
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.links:hover {
+    background-color: var(--white-b-color);
+    border: 2px solid var(--gray-b-color);
+}
+
+.bottom-text {
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--heading-italic);
+}
