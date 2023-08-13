@@ -61,6 +61,7 @@ body {
 
 .container {
     max-width: 1200px;
+    min-height: 75vmin;
     margin: 13.125em auto 0 auto;
 }
 

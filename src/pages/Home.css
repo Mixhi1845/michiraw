@@ -64,7 +64,8 @@
 }
 
 .card {
-    width: 30%;
+    width: 100%;
+    height: 300px;
     background-color: var(--gray-l2-color);
     border: solid 2px var(--gray-b-color);
     border-radius: 5px;
@@ -79,6 +80,18 @@
 
 .card__img {
     width: 100%;
+    height: 250px;
+}
+
+.card__pre {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card__link {
+    width: 30%;
 }
 
 .card__txt p {
@@ -153,6 +166,35 @@
     }
 
     .profcards {
+        flex-direction: column; /* Karten untereinander anordnen */
+        gap: 20px; /* Abstand zwischen den Karten reduzieren */
+    }
+
+    .card {
+        display: flex; /* Container für Bild und Text als Flex-Elemente */
+        align-items: center; /* Elemente in der Mitte ausrichten */
+        width: 100%; /* Karte auf volle Breite setzen */
+        height: 125px; /* Höhe automatisch anpassen */
+    }
+
+    .card__img {
+        width: calc(100% / 3); /* Bild auf ein Drittel der Karte setzen */
+        height: 125px; /* Höhe automatisch anpassen */
+        order: 1; /* Das Bild nach oben schieben */
+    }
+
+    .card__txt {
+        flex-grow: 1; /* Den Textbereich auf den verbleibenden Platz strecken */
+        order: 2; /* Den Text nach unten schieben */
+        margin-left: 10px; /* Abstand zwischen Bild und Text hinzufügen */
+    }
+
+    .card__link {
+        width: 100%;
+    }
+
+    /*
+    .profcards {
         width: 100%;
         margin-top: 30px;
         display: inline-flex;
@@ -164,29 +206,21 @@
 
     .card {
         width: 100%;
-    }
-
-    .card__link {
-        display: block;
-        height: auto;
-        width: auto;
+        height: 125px;
+        display: inline-block;
     }
 
     .card__img {
-        width: 25%;
+        width: 34%;
+        height: 120px;
         display: inline-block;
-    }
-
-    .card__txt {
-        display: inline-block;
-        font-weight: bold;
-        vertical-align: middle;
-    }
+    }*/
 
     .card__txt p {
-        margin: unset;
-        font-weight: unset;
-        vertical-align: middle;
+        margin: 10px 20px;
+        font-weight: bold;
+        height: auto;
+        display: inline-block;
     }
 
     .blog__img {

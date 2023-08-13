@@ -5,6 +5,9 @@ import './Home.css';
 
 import Socials from '../components/modules/Socials';
 
+import prof1 from '../images/vector/thumbs/StargazingF5.webp';
+import prof2 from '../images/webdesign/fulls/PortfolioImglight.png';
+import prof3 from '../images/pics/fulls/IMG_3804.webp';
 import recentBlogTitle from './Blog';
 import recentBlogTxt from './Blog';
 
@@ -42,33 +45,38 @@ function Home() {
             </div>
 
             <div className="profcards">
-                <div className="card">
-                    <Link className="card__link" to="/design">
-                        <img className="card__img" src="https://placehold.co/300x300/c0c0ab/000?text=Graphic+Design\nexample&font=opensans" alt="" />
-
+                <Link className="card__link" to="/professions/design">
+                    <div className="card">
+                        <div className="card__img">
+                            <img className="card__pre" src={prof1} alt="" />
+                        </div>
                         <div className="card__txt">
                             <p>Graphic Design</p>
                         </div>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
 
-                <div className="card">
-                    <Link to="/webdev">
-                        <img className="card__img" src="https://placehold.co/300x300/c0c0ab/000?text=Front+End+Development\nexample&font=opensans" alt="" />
-                        <div className="card__txt">
-                            <p>Front End Development</p>
+                <Link className="card__link" to="/professions/webdev">
+                    <div className="card">
+                        <div className="card__img">
+                            <img className="card__pre" src={prof2} alt="" />
                         </div>
-                    </Link>
-                </div>
+                        <div className="card__txt">
+                            <p>Webdesign</p>
+                        </div>
+                    </div>
+                </Link>
 
-                <div className="card">
-                    <Link to="/photography">
-                        <img className="card__img" src="https://placehold.co/300x300/c0c0ab/000?text=Photography\nexample&font=opensans" alt="" />
+                <Link className="card__link" to="/professions/photography">
+                    <div className="card">
+                        <div className="card__img">
+                            <img className="card__pre" src={prof3} alt="" />
+                        </div>
                         <div className="card__txt">
                             <p>Photography</p>
                         </div>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
 
             <div className="section">
@@ -113,5 +121,8 @@ function Home() {
 }
 
 // short header text+image, typical portfolio landing page presenting my skills in apps an dev stack...
+//"https://placehold.co/300x300/c0c0ab/000?text=Graphic+Design\nexample&font=opensans"
+//"https://placehold.co/300x300/c0c0ab/000?text=Front+End+Development\nexample&font=opensans"
+//"https://placehold.co/300x300/c0c0ab/000?text=Photography\nexample&font=opensans"
 
 export default Home;
