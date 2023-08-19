@@ -151,8 +151,9 @@
     }
 
     .hero__stack {
-        margin: auto 0px;
+        margin: 0px auto;
         margin-top: 30px;
+        width: 100%;
     }
 
     .hero__stack p {

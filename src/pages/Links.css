@@ -12,7 +12,11 @@
 .profile-name {
     text-align: center;
     padding: 30px;
-    font-family: var(--heading-italic);
+}
+
+.socials__links {
+    text-align: center;
+    width: 100%;
 }
 
 .links {

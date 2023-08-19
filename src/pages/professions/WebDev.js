@@ -9,7 +9,7 @@ import src3 from '../../images/webdesign/fulls/PortfolioImglight.png';
 function WebDev() {
     return (
         <>
-            <div className="hero__profession">
+            <div className="page__title">
                 <h1>Web Design & Development</h1>
                 <p>
                     I've gathered valuable Webdesign and Development experience through personal Projact and also school project. For example my first non personal project is the "Ruperti Explorer"

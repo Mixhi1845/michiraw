@@ -1,14 +1,14 @@
-// components/About.js
 import React from 'react';
+//import ResponsiveGallery from 'react-responsive-gallery';
 
-function About() {
+function Archive() {
     return (
         <>
             <div className="page__title">
-                <h1>About</h1>
+                <h1>Archive</h1>
             </div>
         </>
     );
 }
 
-export default About;
+export default Archive;

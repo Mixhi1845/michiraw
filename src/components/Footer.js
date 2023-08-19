@@ -17,7 +17,7 @@ function Footer() {
                     <Link to="/imprint">
                         <p className="p__bold">Imprint</p>
                     </Link>
-                    <Link to="/archiv">
+                    <Link to="/archive">
                         <p className="p__bold">Archiv</p>
                     </Link>
                     <Link to="/dashboard">

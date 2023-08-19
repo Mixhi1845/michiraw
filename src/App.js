@@ -14,11 +14,11 @@ import ProjectSeminar from './pages/professions/ProjectSeminar';
 
 import About from './pages/About';
 import Blog from './pages/Blog';
-//import Dashboard from './pages/Dashboard';
-//import Archiv from './pages/Archiv';
 import Links from './pages/Links';
 
-import Imprint from './components/Imprint';
+import Imprint from './pages/Imprint';
+import Archive from './pages/Archive';
+import Dashboard from './pages/Dashboard';
 import NotFound from './components/NotFound';
 
 function App() {
@@ -41,6 +41,8 @@ function App() {
                         <Route path="/links" element={<Links />} />
 
                         <Route path="/imprint" element={<Imprint />} />
+                        <Route path="/archive" element={<Archive />} />
+                        <Route path="/dashboard" element={<Dashboard />} />
                         <Route element={NotFound} />
                     </Routes>
                 </div>

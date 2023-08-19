@@ -1,4 +1,3 @@
-// components/Photography.js
 //Gallerie: https://github.com/OriAmir/React-Responsive-Gallery
 
 import React from 'react';
@@ -19,7 +18,7 @@ const images = [
 function Photography() {
     return (
         <>
-            <div className="hero__profession">
+            <div className="page__title">
                 <h1>Photography</h1>
                 <p>Ever since I am a small kid I loved taking photos. As a matter of fact I bought my first DSLR in sixth grade.</p>
             </div>

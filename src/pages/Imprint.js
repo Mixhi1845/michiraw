@@ -1,19 +1,9 @@
-// components/Imprint.js
 import React from 'react';
-import Dropdown from './modules/Dropdown';
 
 function Imprint() {
     return (
         <>
-            <Dropdown MainTitle="Credits" link1="" title1="w3schools" link2="" title2="" link3="" title3="" link4="" title4="" link5="" title5="" />
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <div className="hero__profession">
+            <div className="page__title">
                 <h1>Imprint</h1>
             </div>
 

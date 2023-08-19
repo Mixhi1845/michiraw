@@ -1,4 +1,3 @@
-// Navbar.jsclassName
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -37,13 +36,7 @@ function Navbar() {
                                     <Link to="/">Home</Link>
                                 </li>
                                 <li className="nav__item">
-                                    <Link to="/">Etsy</Link>
-                                </li>
-                                <li className="nav__item">
                                     <Link to="/about">About</Link>
-                                </li>
-                                <li className="nav__item">
-                                    <Link to="/blog">Blog</Link>
                                 </li>
                             </ul>
                         </nav>

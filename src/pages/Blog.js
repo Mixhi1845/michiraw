@@ -5,7 +5,7 @@ import React from 'react';
 
 function Blog() {
     return (
-        <div className="hero__profession">
+        <div className="page__title">
             <h1>Blog</h1>
         </div>
     );

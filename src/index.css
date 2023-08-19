@@ -162,10 +162,18 @@ img {
     }
 }
 
-.hero__profession {
+.page__title {
     width: 66%;
     margin: 0px auto 20px;
     text-align: center;
+}
+
+.stats__graph {
+    width: 50%;
+}
+
+.stats__numbers {
+    width: 25%;
 }
 
 .hero__profession p {
@@ -240,6 +248,14 @@ button:hover {
 
     .btn p {
         margin: 10px 10px;
+    }
+
+    .stats__graph {
+        width: 100%;
+    }
+
+    .stats__numbers {
+        width: 75%;
     }
 }
 
